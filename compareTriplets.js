@@ -10,6 +10,10 @@ function compareTriplets(a, b) {
         if (b[i] > a[i]) {
             comparisonResult[1] = comparisonResult[1] + 1;
         }
+        if (a[i] === b[i]) {
+            comparisonResult[0] = comparisonResult[0];
+            comparisonResult[1] = comparisonResult[1];
+        }
     }
     return comparisonResult;
 }
